@@ -1,9 +1,11 @@
 <%- include("partials/header.ejs") %>
 
 <h2>Add a Blog Post</h2>
-<form action="/action_page.php">
-    <label for="post">Your Blog Post</label><br>
-    <textarea id="post" name="post" rows="4" cols="50"></textarea><br>
+<form action="/submit" method="post">
+    <label for="title">Title</label><br>
+    <textarea id="title" name="title" rows="2" cols="100"></textarea><br>
+    <label for="post">Post</label><br>
+    <textarea id="post" name="post" rows="20" cols="100"></textarea><br>
     <input type="submit" value="Submit">
 </form> 
 

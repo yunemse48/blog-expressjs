@@ -1,3 +1,14 @@
 <%- include("partials/header.ejs") %>
 
+<% if (locals.titles.length > 0) { %>
+    <h1>Posts</h1>
+    <ul>
+        <% for(let i = 0; i < titles.length; i++) { %>
+            <li><a href="/posts/<%= i %>" target="_blank"><%= titles[i] %></a></li><br>
+        <% } %>
+    </ul>
+<% } else { %>
+    <h1>No Posts Published</h1>
+<% } %>
+
 <%- include("partials/footer.ejs") %>
